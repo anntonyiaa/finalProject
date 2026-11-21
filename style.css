@@ -1,0 +1,151 @@
+/* main style*/ 
+body {
+	background-color: #859B2C;
+	background-image: url("green4.jpg");
+	padding: 2rem;
+	background-repeat: repeat;
+    background-position: center;
+}
+
+p {
+	font-family: Cinzel;
+	color: #C6367E;
+	text-align: justify;
+	font-size:23px;
+	margin: 10px;
+}
+
+h1, h2, h3, h4 {
+	font-family: Alice;
+	color: #C6367E;
+	text-align: center;
+	font-style: italic;
+}
+
+li {
+	font-family: Cinzel;
+	color: #C6367E;
+	text-align: left;
+	font-size: 19px;
+}
+
+/* div classes */
+
+div {
+	border-radius:4px;
+	background-color: #FFD3E0;
+	width: 1000px;
+	padding: 18px;
+	margin-bottom: 10px;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.meow {
+	display: flex;
+	padding: 10px;
+	margin-right: auto;
+	padding:19px
+}
+
+.interests {
+	margin: 5px;
+	border: 2px solid #C6367a;
+    background-color: #F9D1D7;
+	text-align: center;
+	color: #C6367E;
+	font-style: italic;
+}
+
+.projects1 {
+	background-color: #F9D1D7;
+	box-sizing: border-box;
+	flex-wrap: wrap;
+	flex: 0 0 38%;
+	border: 2px solid #C6367a;
+}
+
+.bio-box {
+    align-items: center;
+}
+
+.bio {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #E6579F;
+	text-align: justify;
+}
+
+.dp {
+    background-color: #FFD1D7;
+	box-sizing: border-box;
+	flex: 0 0 38%;
+	border: 2px solid #C6367a;
+}
+
+.dp1 {
+	border: 2px solid #C6367a;
+    background-color: #FFD1D7;
+	box-sizing: border-box;
+	flex: 0 0 38%;
+	font-size: 67px;
+	font-family: Alice;
+	text-align: center;
+	color: #C6367E;
+	font-style: italic;
+}
+
+.dp img {
+	border-radius: 4px;
+	height: 460px;
+	width: 330px;
+	float: right;
+	margin: 10px 0px 15px 20px;
+	border: 4px solid #C9778A;
+}
+
+/*links*/ 
+
+a:hover {
+    color: #E95C71;
+}
+
+a {
+    color: #B01570;
+	font-family: Alice;
+	font-style: italic;
+}
+
+/* mobile screen styling */
+
+@media (max-width: 800px){
+		body {
+			padding: 10rem;
+			margin: 20px;
+		}
+		
+		h1, h2, h3{
+			align-items: center;
+			flex: auto; 
+
+		.bio-box {
+			flex-direction: column;
+			align-items: stretch;
+			gap: 2rem;
+		}
+
+		.dp {
+			flex: auto;
+			width: 100%;
+			margin-top: 2px;
+		}
+
+		.bio {
+			flex: none;
+			width: 100%;
+		}
+
+		.bio p {
+			font-size: 1rem;
+			line-height: 1.65;
+		}
+	}
